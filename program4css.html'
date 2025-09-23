@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>program 4 </title>
+<style>
+ul {
+border:2px  solid ;
+padding:10px;
+font-size: 18px;
+background-color:lightblue; 
+      }
+      </style>
+      <link rel="stylesheet" type="text/css" href="program4css.css">
+<head>
+<body>
+<center><h1> CSS </h1></center>
+<h1 style="font-size: 18px;  border:2px solid #333; 
+          padding:10px; 
+          background-color:lightblue; 
+          border-radius:8px; 
+          display:inline-block;">ICSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It controls how elements appear on a webpage, such as layout, colors, fonts, spacing, and responsiveness. CSS allows developers to separate content from design, making websites easier to maintain and more consistent in appearance.</h1>
+          <ul>There are three main types of CSS based on how the styles are applied to HTML:
+
+<ol>
+<li>Inline CSS is used directly within an HTML element using the style attribute. It affects only that specific element.</li>
+
+<li>Internal CSS is written inside a style tag within the <head> section of an HTML document.</li>
+
+<li>Inline CSS is used directly within an HTML element using the style attribute.</li>
+    </ol>
+    </ul>
+    
+  <h1 class="table">Basic CSS Properties</h1>
+
+  <table border="1">
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>color</td>
+      <td>Sets the text color</td>
+    </tr>
+    <tr>
+      <td>background-color</td>
+      <td>Sets the background color</td>
+    </tr>
+    <tr>
+      <td>font-size</td>
+      <td>Sets the size of the text</td>
+    </tr>
+    <tr>
+      <td>text-align</td>
+      <td>Aligns text (left, center, right)</td>
+    </tr>
+  
+  </table>
+</body>
+</html>
+
