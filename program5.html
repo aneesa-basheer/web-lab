@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Registration form</title>
+</head>
+
+<style>
+ input[type="submit"] {
+      background-color: green;
+      
+    }
+
+    input[type="reset"] {
+      background-color: red;
+      
+    }
+</style>
+
+
+<body>
+<center><h1>Registration form</h1></center>
+<form>
+
+<fieldset>
+      <legend> Student Informations</legend>
+      
+      <label for="name">Name:</label>
+      <select id="name" name="name" required>
+        <option value="">Mr</option>
+        <option value="1">Mrs</option>
+        <option value="2">Miss</option>
+      </select>
+      <input type="text" id="name" name="phone" required /><br /><br />
+      
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+    </fieldset>
+    <br>
+    <br>
+    
+    <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" cols="30" required></textarea><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+<br />
+<br />
+
+      <label>Languages Known:</label>
+      <input type="checkbox" id="english" name="english" value="English" />
+      <label for="english">English</label>
+      <input type="checkbox" id="malayalam" name="malayalam" value="Spanish" />
+      <label for="malayalam">malayalam</label>
+      <input type="checkbox" id="hindi" name="languages" value="French" />
+      <label for="hindi">Hindi</label><br /><br />
+
+       <label for="course">Courses:</label>
+      <select id="course" name="course" required>
+        <center><option value="1">MCA</option>
+        <option value="2">MBA</option>
+        <option value="3">MTECH</option>
+        <option value="3">BTECH</option>
+       <option value="3">PHD</option>
+      
+      </select>
+      <br>
+      <br><br>
+     <center><input type="submit" value="Submit" />
+<input type="reset" value="Reset" /></center>
+      
+      
+      
+      
+</form>
+</body>
+</html>
