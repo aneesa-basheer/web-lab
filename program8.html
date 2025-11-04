@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Registration form</title>
+</head>
+<style>
+body{
+ background-color: lightblue;
+}
+input[type="submit"] {
+      background-color: lightblue;
+      
+    }
+    
+form {
+    background-color: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+   
+    
+</style>
+<body>
+<center><h1>Registration form</h1></center>
+<form onsubmit="return validate()">
+<fieldset>
+         
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="phone"  /><br /><br />
+      
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" /><br /><br />
+      
+       <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password" /><br /><br />
+      
+      <label for="confirm">Confirm Password:</label>
+      <input type="text" id="confirm" name="confirm" />
+      <br>
+      <br>
+      <center><input type="submit" value="Register Now" />
+    </fieldset>
+</form>
+</body>
+<script>
+function validate()
+{
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirm = document.getElementById("confirm").value;
+    
+    var nameval = /^[A-Z][a-zA-Z]*$/;
+    var phoneval = /^\d{10}$/;
+    var emailval = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if(!nameval.test(name))
+    {
+     alert("Name must start with a capital letter and contain only letters (A–Z, a–z).");
+     
+    }
+     if (!phoneval.test(phone))
+    {
+        alert("Phone number must contain exactly 10 digits.");
+    }
+    if (!emailval.test(email)) {
+        alert("Please enter a valid email address.");
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+    }
+
+    if (password !== confirm) {
+        alert("Passwords do not match.");
+
+    }
+}
+</script>
+
+</html>
+
