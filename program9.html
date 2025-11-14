@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Program 9</title>
+</head>
+<h2><center>Image Hover example program</h2>
+<style>
+    img {
+        width: 150px; 
+        height:200px;
+        border: 5px solid purple; 
+        padding: 5px;     
+    }
+       body {
+        text-align: center; 
+        margin-top: 50px;
+    }
+   
+</style>
+<body>
+ <img id="myImg" src="img1.jpg" alt="Image 1" onmouseover="changeImage1()" onmouseout="restoreImage()">
+       <p id="text"></p>  
+<script>
+    function changeImage1() {
+     document.getElementById("myImg").src = "img2.jpg";
+     document.getElementById("text").textContent = "Image Mouseover!";
+    }
+    function restoreImage() {
+     document.getElementById("myImg").src = "img3.jpeg";
+     document.getElementById("text").textContent = "Image Mouseout!";
+    }
+</script>
+</body>
+</html>
